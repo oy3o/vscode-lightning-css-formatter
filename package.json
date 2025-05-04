@@ -19,7 +19,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "lightningcss-simple.formatAndMerge",
+        "command": "lightningcss.formatAndMerge",
         "title": "Lightning CSS: Format and Merge Shorthands"
       }
     ],
@@ -27,13 +27,13 @@
       "editor/context": [
         {
           "when": "resourceLangId == css",
-          "command": "lightningcss-simple.formatAndMerge",
+          "command": "lightningcss.formatAndMerge",
           "group": "1_modification"
         }
       ],
       "commandPalette": [
         {
-          "command": "lightningcss-simple.formatAndMerge",
+          "command": "lightningcss.formatAndMerge",
           "when": "editorLangId == css"
         }
       ]
