@@ -14,7 +14,9 @@
   "categories": [
     "Formatters"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:css"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
