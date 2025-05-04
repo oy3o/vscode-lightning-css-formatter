@@ -1,0 +1,51 @@
+{
+  "name": "lightning-css-formatter",
+  "displayName": "Lightning CSS Formatter",
+  "description": "Formats CSS and merges shorthand properties using Lightning CSS.",
+  "version": "0.0.1",
+  "publisher": "oy3o",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "lightningcss-simple.formatAndMerge",
+        "title": "Lightning CSS: Format and Merge Shorthands"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "resourceLangId == css",
+          "command": "lightningcss-simple.formatAndMerge",
+          "group": "1_modification"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "lightningcss-simple.formatAndMerge",
+          "when": "editorLangId == css"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/vscode": "^1.80.0",
+    "eslint": "^8.40.0"
+  },
+  "dependencies": {
+    "lightningcss": "^1.29.3"
+  }
+}
