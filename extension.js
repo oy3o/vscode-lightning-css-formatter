@@ -4,10 +4,10 @@ const { transform } = require('lightningcss');
 
 // 插件激活时调用的函数
 function activate(context) {
-    console.log('Extension "lightningcss-formatter" is now active!');
+    console.log('Extension "lightning-css-formatter" is now active!');
 
     // 注册新的命令 ID
-    let disposable = vscode.commands.registerCommand('lightningcss.formatAndMerge', async () => {
+    let disposable = vscode.commands.registerCommand('lightning-css-formatter.formatAndMerge', async () => {
         const editor = vscode.window.activeTextEditor;
 
         if (!editor) {
