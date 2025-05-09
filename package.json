@@ -2,7 +2,7 @@
   "name": "lightning-css-formatter",
   "displayName": "Lightning CSS Formatter",
   "description": "Formats CSS and merges shorthand properties using Lightning CSS.",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "publisher": "oy3o",
   "repository": {
     "type": "git",
